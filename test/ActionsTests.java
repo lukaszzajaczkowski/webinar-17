@@ -32,6 +32,7 @@ public class ActionsTests extends BaseTest {
                 .build()
                 .perform();
 
-        Assert.assertTrue(driver.getCurrentUrl().contains("users/2"));
+        String currentUrl = driver.getCurrentUrl();
+        Assert.assertTrue(currentUrl.contains("users/2"));
     }
 }

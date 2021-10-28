@@ -12,6 +12,9 @@ ZADANIE DOMOWE:
 1. przetestować poprawność koloru linku 'click here' na stronie http://the-internet.herokuapp.com/entry_ad
 2. przetestować czy zmienia się kolor linku po najechaniu
 3*. https://justjoin.it/ -> przetestować działanie trybu dzień/noc
+
+4. Stworzyć klasę testującą checkboxy i wykonać test czy checkbox 'I have a bike' ma atrybut value równy bike
+5. Dopisać w dowolnym teście zrobienie zrzutu ekranu
  */
 public class CssAttributesTests extends BaseTest {
     private static WebElement modalAd;

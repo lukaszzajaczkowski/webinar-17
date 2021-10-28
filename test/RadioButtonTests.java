@@ -2,6 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import utils.ScreenshotUtil;
 
 import java.util.List;
 
@@ -10,6 +11,9 @@ public class RadioButtonTests extends BaseTest {
     @Test
     public void thereAreThreeRadioButtonInForm() {
         driver.get("https://ultimateqa.com/simple-html-elements-for-automation/");
+
+        ScreenshotUtil.takeScreenshot(driver, "radio.jpg");
+
         List<WebElement> radioButtons = driver.findElements(By.cssSelector("input[type='radio']"));
 
         // sprawdzenie czy pierwszy radio jest zaznaczony na starcie

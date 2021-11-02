@@ -11,7 +11,7 @@ import java.io.IOException;
 public class ScreenshotUtil {
     public static void takeScreenshot(WebDriver driver, String fileName) {
         File simpleShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        File destinationFile = new File(System.getProperty("user.dir") + "/target/" + fileName);
+        File destinationFile = new File(System.getProperty("user.dir") + "\\target\\" + fileName);
 
         try {
             FileUtils.copyFile(simpleShot, destinationFile);
